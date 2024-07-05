@@ -3,10 +3,8 @@ import React from 'react'
 import { SiChakraui, SiCss3, SiExpress, SiFigma, SiFirebase, SiGooglecloud, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiReact, SiReactquery, SiSolana, SiTailwindcss, SiTypescript } from 'react-icons/si'
 import Title from './Title'
 import Link from 'next/link'
-import { cn } from '@/lib/utils'
 import { DirectionAwareHover } from '@/components/ui/direction-aware-hover'
 import { BackgroundGradient } from '@/components/ui/background-gradient'
-import { MovingBorderBtn } from '@/components/ui/moving-border'
 
 export default function Project() {
 
@@ -14,7 +12,7 @@ export default function Project() {
     {
         title: "LabelMate",
         tech: [SiNextdotjs, SiTypescript, SiSolana, SiPostgresql, SiPrisma, SiFirebase],
-        link: "https://github.com/Meet1733/LabelMate",
+        link: "https://labelmate.vercel.app/",
         cover: "/labelmate.png",
         background: "bg-indigo-500",
     },
@@ -49,9 +47,7 @@ export default function Project() {
             {projects.map((project,index) => {
                 return (
                     <Link href={project.link} key={index} target='_blank'>
-                        {/* <MovingBorderBtn> */}
                         <BackgroundGradient className="rounded-[22px] p-4 sm:p-5 bg-white dark:bg-zinc-900">
-                        {/* <div className={cn("p-5 rounded-md", project.background)}> */}
                             <DirectionAwareHover imageUrl={project.cover} className='w-full space-y-5 cursor-pointer'>
                                 <div className='space-y-5'>
                                     <h1 className='text-2xl font-bold'>{project.title}</h1>
@@ -62,9 +58,7 @@ export default function Project() {
                                     </div>
                                 </div>
                             </DirectionAwareHover>
-                        {/* </div> */}
                         </BackgroundGradient>
-                        {/* </MovingBorderBtn> */}
                     </Link>
                 )
             })}
