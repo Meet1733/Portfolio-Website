@@ -17,7 +17,7 @@ export default function HeroSection() {
             </p>
 
             <div>
-                <Link href={"https://drive.google.com/file/d/1TCF7rrAX9EG7MKcnMQ3HD28KgsV7hrPH/view?usp=drivesdk"} target='_blank' className='inline-block group mr-5'>
+                <Link href={"https://drive.google.com/file/d/1iW9Q9LzA1MOsy89Wwjj4Q2_gqPWqdfs1/view"} target='_blank' className='inline-block group mr-5'>
                     <Title text="Resume 📄"/>
                 </Link>
                 <Link href={"mailto:meetharsoda5@gmail.com"} className='inline-block group'>
