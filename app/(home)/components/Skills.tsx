@@ -3,7 +3,7 @@
 import React from 'react'
 import Title from './Title'
 import { HoverEffect } from '../../../components/ui/card-hover-effect'
-import { SiFirebase, SiGit, SiJavascript, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostgresql, SiReact, SiTailwindcss, SiTypescript } from 'react-icons/si'
+import { SiDrizzle, SiFirebase, SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiReact, SiTailwindcss, SiTypescript } from 'react-icons/si'
 
 export default function Skills() {
 
@@ -21,8 +21,8 @@ export default function Skills() {
             Icon: SiTailwindcss,
         },
         {
-            text: "Firebase",
-            Icon: SiFirebase,
+            text: "MySQL",
+            Icon: SiMysql,
         },
         {
             text: "Postgres",
@@ -33,8 +33,8 @@ export default function Skills() {
             Icon: SiMongodb,
         },
         {
-            text: "Node.js",
-            Icon: SiNodedotjs,
+            text: "Firebase",
+            Icon: SiFirebase,
         },
         {
             text: "Javascript",
@@ -44,6 +44,18 @@ export default function Skills() {
             text: "Typescript",
             Icon: SiTypescript,
         },
+        {
+            text: "Node.js",
+            Icon: SiNodedotjs,
+        },
+        {
+            text: "Prisma",
+            Icon: SiPrisma,
+        },
+        {
+            text: "Drizzle",
+            Icon: SiDrizzle,
+        }
     ]
 
   return (

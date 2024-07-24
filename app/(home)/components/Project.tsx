@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { SiChakraui, SiCss3, SiExpress, SiFigma, SiFirebase, SiGooglecloud, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiReact, SiReactquery, SiSolana, SiTailwindcss, SiTypescript } from 'react-icons/si'
+import { SiChakraui, SiClerk, SiCss3, SiDrizzle, SiExpress, SiFigma, SiFirebase, SiGooglecloud, SiGooglegemini, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiReact, SiReactquery, SiSolana, SiTailwindcss, SiTypescript } from 'react-icons/si'
 import Title from './Title'
 import Link from 'next/link'
 import { DirectionAwareHover } from '@/components/ui/direction-aware-hover'
@@ -11,23 +11,23 @@ export default function Project() {
   const projects = [
     {
         title: "LabelMate",
-        tech: [SiNextdotjs, SiTypescript, SiSolana, SiPostgresql, SiPrisma, SiFirebase],
+        tech: [SiNextdotjs, SiTypescript, SiSolana, SiPostgresql, SiPrisma, SiFirebase, SiTailwindcss],
         link: "https://labelmate.vercel.app/",
         cover: "/labelmate.png",
         background: "bg-indigo-500",
+    },
+    {
+        title: "InterviewAI",
+        tech: [SiNextdotjs, SiGooglegemini ,SiPostgresql, SiDrizzle, SiClerk, SiTailwindcss],
+        link: "https://interview-ai-vert.vercel.app/",
+        cover: "/interviewai.png",
+        background: "bg-green-500",
     },
     {
         title: "YourPlaces",
         tech: [SiReact, SiNodedotjs, SiExpress,SiMongodb, SiFirebase],
         link: "https://yourplaces1733.netlify.app/",
         cover: "/yourplaces.png",
-        background: "bg-green-500",
-    },
-    {
-        title: "CodeAlgo",
-        tech: [SiReact, SiNodedotjs, SiExpress,SiMongodb,SiChakraui],
-        link: "https://codealgo.netlify.app/home",
-        cover: "/codealgo.png",
         background: "bg-green-500",
     },
     {
