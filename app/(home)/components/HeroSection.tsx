@@ -5,7 +5,7 @@ import Title from './Title'
 
 export default function HeroSection() {
   return (
-    <div className=' min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between animate-move-up'>
+    <div className=' min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between animate-move-up mb-4'>
         <div className=' space-y-10 text-center lg:text-left'>
             <h1 className='text-4xl lg:text-7xl font-bold'>
                 Welcome to My Profile 👋
@@ -17,7 +17,7 @@ export default function HeroSection() {
             </p>
 
             <div>
-                <Link href={"https://drive.google.com/drive/folders/1fC3EqiWs_RGlZrFovub9sqov0PO7rXSd"} target='_blank' className='inline-block group mr-5'>
+                <Link href={"https://drive.google.com/file/d/1DGmw_xZVisYuBCh6A9Ee6ZFEdksqsnXd/view?usp=sharing"} target='_blank' className='inline-block group mr-5'>
                     <Title text="Resume 📄"/>
                 </Link>
                 <Link href={"mailto:meetharsoda5@gmail.com"} className='inline-block group'>
